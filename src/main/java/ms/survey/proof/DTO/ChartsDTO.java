@@ -1,0 +1,15 @@
+package ms.survey.proof.DTO;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ChartsDTO {
+
+    private String MusicalDescription;
+    private int amount;
+}
