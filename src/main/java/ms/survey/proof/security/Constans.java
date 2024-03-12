@@ -11,8 +11,8 @@ public class Constans {
 
     public static final String LOGIN_URL = "/api/get/token";
 
-    public static final String INSERT_GET_SURVEY = "/api/get/token";
-    public static final String OPTIONS_GET_MUSICAL = "/survey/get/musical";
+    public static final String SWAGGER_CONSOLE = "/swagger-ui/**";
+    public static final String SWAGGER_CONSOLE_V3 = "/v3/api-docs/**";
     public static final String  H2_CONSOLE = "/h2-console/**";
     public static final String HEADER_AUTHORIZACION_KEY = "Authorization";
     public static final String TOKEN_BEARER_PREFIX = "Bearer ";

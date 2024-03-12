@@ -25,8 +25,9 @@ class WebSecurityConfig{
                         .disable())
                 .authorizeRequests( authz -> authz
                         .antMatchers(HttpMethod.POST,Constans.LOGIN_URL).permitAll()
-                        .antMatchers(HttpMethod.GET,Constans.H2_CONSOLE).permitAll()
-                        .antMatchers(HttpMethod.POST,Constans.H2_CONSOLE).permitAll()
+                        .antMatchers(HttpMethod.GET,Constans.SWAGGER_CONSOLE).permitAll()
+                        .antMatchers(HttpMethod.POST,Constans.SWAGGER_CONSOLE).permitAll()
+                        .antMatchers(HttpMethod.GET,Constans.SWAGGER_CONSOLE_V3).permitAll()
                         .anyRequest().authenticated())
                 .addFilterAfter(jwtAuthorizationFilter, UsernamePasswordAuthenticationFilter.class)
                 .headers().frameOptions().disable()
