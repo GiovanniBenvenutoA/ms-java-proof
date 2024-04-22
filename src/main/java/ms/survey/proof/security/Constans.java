@@ -9,7 +9,7 @@ import java.security.Key;
 public class Constans {
 
 
-    public static final String LOGIN_URL = "/api/get/token";
+    public static final String LOGIN_URL = "/api/token";
 
     public static final String SWAGGER_CONSOLE = "/swagger-ui/**";
     public static final String SWAGGER_CONSOLE_V3 = "/v3/api-docs/**";

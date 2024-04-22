@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration;
 
 @SpringBootApplication(exclude = {UserDetailsServiceAutoConfiguration.class})
-public class MsSurveyProofApplication {
+public class MsProductProofApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MsSurveyProofApplication.class, args);
+        SpringApplication.run(MsProductProofApplication.class, args);
     }
 
 }

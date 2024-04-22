@@ -38,7 +38,7 @@ public class TokenController {
                     mediaType = "application/json"
             )}
     )
-    @PostMapping("/get/token")
+    @PostMapping("/token")
     public TokenDTO login(
             @RequestParam("userToken") String username) {
         return jwtAuthtenticationConfig.getJWTToken(username);
