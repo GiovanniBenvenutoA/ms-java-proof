@@ -75,11 +75,11 @@ public class ProductServiceImpl implements ProductService {
                     responseProduct.setCode("0");
                     responseProduct.setMessage("Se encontraron registros de productos");
                     responseProduct.setProduct(productDTOs);
-                    return new ResponseEntity<>(responseProduct,HttpStatus.BAD_REQUEST);
+                    return new ResponseEntity<>(responseProduct,HttpStatus.OK);
                 }else{
                     responseProduct.setCode("1");
                     responseProduct.setMessage("No se encontraron registros de productos");
-                    return new ResponseEntity<>(responseProduct,HttpStatus.BAD_REQUEST);
+                    return new ResponseEntity<>(responseProduct,HttpStatus.NOT_FOUND);
                 }
 
 
