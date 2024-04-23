@@ -45,7 +45,7 @@ public class ProductsController {
     )
     @SecurityRequirement(name = "bearerAuth")
     @PostMapping("/add/product")
-    public ResponseEntity<ResponseProduct> addMusical(@RequestBody ProductDto productDto) {
+    public ResponseEntity<ResponseProduct> addProduct(@RequestBody ProductDto productDto) {
         return productService.addProduct(productDto);
     }
 
