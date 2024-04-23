@@ -1,7 +1,6 @@
 package ms.survey.proof.repository;
 
 import ms.survey.proof.entities.Product;
-import ms.survey.proof.entities.Survey;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

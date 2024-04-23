@@ -30,3 +30,6 @@ Para desplegar la aplicación en un entorno local, sigue estos pasos:
 4. Luego de eso, aparecerá `MsProductProofApplication`, que es una aplicación de Spring Boot. Ejecútala.
 5. Cuando termine el despliegue, podrás ingresar [http://localhost:8082/swagger-ui/index.html](http://localhost:8082/swagger-ui/index.html).
 6. Necesitas primero ejecutar el servicio de obtención de token [http://localhost:8082/api/token?userToken=userToken](http://localhost:8082/api/token?userToken=userToken).
+7. para ejecutar docker con sonar puedes usar este comando docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
+8. luego de eso ejecutar con maven clean verify sonar:sonar 
+9. por ultimo al terminar [http://localhost:9000/component_measures?id=ms.survey.proof.data%3Ams-survey-proof&metric=coverage&view=list](http://localhost:9000/component_measures?id=ms.survey.proof.data%3Ams-survey-proof&metric=coverage&view=list).
