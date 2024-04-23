@@ -2,7 +2,6 @@ package ms.survey.proof.service.impl;
 
 import ms.survey.proof.DTO.ProductDto;
 import ms.survey.proof.DTO.ResponseProduct;
-import ms.survey.proof.DTO.StyleMusicalDTO;
 import ms.survey.proof.entities.Product;
 import ms.survey.proof.repository.ProductRepository;
 import ms.survey.proof.service.ProductService;
