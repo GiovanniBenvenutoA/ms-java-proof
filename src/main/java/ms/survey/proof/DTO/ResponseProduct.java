@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -12,5 +14,5 @@ public class ResponseProduct {
 
     private String message;
     private String code;
-    private ProductDto product;
+    private List<ProductDto> product;
 }
