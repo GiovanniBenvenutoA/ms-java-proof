@@ -1,7 +1,7 @@
 # ms-java-proof
 
 ## Descripción
-Este proyecto tiene como objetivo la creación de una aplicación de encuestas sobre las bandas que son populares entre los jóvenes.
+Este proyecto tiene como objetivo la creación de una aplicación de productos sobre la cual poder buscar productos similes.
 
 ## Tecnologías
 Este proyecto está desarrollado utilizando las siguientes tecnologías:
@@ -27,11 +27,6 @@ Para desplegar la aplicación en un entorno local, sigue estos pasos:
 1. Clona el repositorio desde [https://github.com/GiovanniBenvenutoA/ms-java-proof](https://github.com/GiovanniBenvenutoA/ms-java-proof).
 2. Ábrelo en algún compilador de Java (Yo utilicé IntelliJ IDEA).
 3. Ejecuta Maven Clean Install. En la sección de configuraciones, escribe "clean install" con Maven y ejecútalo.
-4. Luego de eso, aparecerá `MsSurveyProofApplication`, que es una aplicación de Spring Boot. Ejecútala.
+4. Luego de eso, aparecerá `MsProductProofApplication`, que es una aplicación de Spring Boot. Ejecútala.
 5. Cuando termine el despliegue, podrás ingresar [http://localhost:8082/swagger-ui/index.html](http://localhost:8082/swagger-ui/index.html).
-6. Ya viene con datos precargados. Puedes encontrar en Swagger todo lo necesario para ejecutar.
-7. Necesitas primero ejecutar el servicio de obtención de token [http://localhost:8082/api/token?userToken=userToken](http://localhost:8082/api/token?userToken=userToken).
-8. Luego de obtener el token, puedes ir a Postman. Por ejemplo: [http://localhost:8082/survey/add/musical?musicalType=clasica](http://localhost:8082/survey/add/musical?musicalType=clasica). En el apartado de autorización, agrega el token obtenido anteriormente como Bearer Token.
-9. para ejecutar docker con sonar puedes usar este comando docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
-10. luego de eso ejecutar con maven clean verify sonar:sonar
-11. por ultimo al terminar [http://localhost:9000/component_measures?id=ms.survey.proof.data%3Ams-survey-proof&metric=coverage&view=list](http://localhost:9000/component_measures?id=ms.survey.proof.data%3Ams-survey-proof&metric=coverage&view=list).
+6. Necesitas primero ejecutar el servicio de obtención de token [http://localhost:8082/api/token?userToken=userToken](http://localhost:8082/api/token?userToken=userToken).
